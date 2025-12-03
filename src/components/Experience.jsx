@@ -35,10 +35,10 @@ function Experience(){
     <section id="info-section" className="flex flex-col gap-2">
       <button className="hidden">Add</button>
       <h1 className="text-xl font-extrabold">WORK EXPERIENCE</h1>
-      <div className="flex flex-col gap-4">
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(350px,1fr))] gap-5">
         {experience.map(exp => {
           return(
-            <section key={exp.id} className="w-lg text-sm flex flex-col gap-1 p-1">
+            <section key={exp.id} className="text-sm flex flex-col gap-1 p-1">
               <div className="flex w-full">
                 <h3>{exp.jobTitle},</h3>
                 <div className="ml-auto">{exp.startDate} - {exp.endDate}</div>

@@ -18,7 +18,7 @@ function App() {
   }
 
   return (
-    <div id="cv" className='font-[Nunito] text-stone-700 w-screen px-3 py-7 flex items-center'>
+    <div id="cv" className='font-[Nunito] text-stone-700 w-[clamp(773px,80%,1063px)] m-auto px-3 py-7 flex shadow-2xl'>
       <Aside />
       <Main user={user}/>
     </div>
