@@ -27,7 +27,7 @@ function Education(){
   ]
 
   return(
-    <Section heading={'EDUCATION'} hasAdd={false} className={'w-full'}>
+    <Section heading={'EDUCATION'} hasAdd={true} className={'w-full'}>
       <div className="flex flex-col gap-4">
         {coursesStudied.map(course => {
           return(

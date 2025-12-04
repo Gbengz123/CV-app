@@ -33,7 +33,7 @@ function Experience(){
   ]
 
   return(
-    <Section heading={'WORK EXPERIENCE'} hasAdd={false} className={''}>
+    <Section heading={'WORK EXPERIENCE'} hasAdd={true} className={''}>
       <div className="grid grid-cols-[repeat(auto-fill,minmax(350px,1fr))] gap-5">
         {experience.map(exp => {
           return(

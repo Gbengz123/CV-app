@@ -34,7 +34,7 @@ function References(){
   ]
 
   return(
-    <Section heading={'REFERENCES'} hasAdd={false} className={''}>
+    <Section heading={'REFERENCES'} hasAdd={true} className={''}>
       <div className="grid grid-cols-[repeat(auto-fill,minmax(215px,1fr))] gap-4">
         {references.map(reference => {
           return(
