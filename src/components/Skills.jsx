@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Section from "./Section"
 
 function Skills(){
   const skills = [
@@ -25,9 +26,7 @@ function Skills(){
   ]
 
   return(
-    <section className="flex flex-col gap-2 w-full">
-      <button className="hidden">Add</button>
-      <h1 className="text-xl font-extrabold">Skills</h1>
+    <Section heading={'SKILLS'} hasAdd={false} className={''}>
       <div className="flex flex-col gap-2">
         {skills.map(skill => {
           return(
@@ -37,7 +36,7 @@ function Skills(){
           )
         })}
       </div>
-    </section>
+    </Section>
   )
 }
 

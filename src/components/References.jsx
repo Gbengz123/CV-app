@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Section from "./Section"
 
 function References(){
   const references = [
@@ -33,9 +34,7 @@ function References(){
   ]
 
   return(
-    <section className="flex flex-col gap-2">
-      <button className="hidden">Add</button>
-      <h1 className="text-xl font-extrabold">REFRENCES</h1>
+    <Section heading={'REFERENCES'} hasAdd={false} className={''}>
       <div className="grid grid-cols-[repeat(auto-fill,minmax(215px,1fr))] gap-4">
         {references.map(reference => {
           return(
@@ -48,7 +47,7 @@ function References(){
           )
         })}
       </div>
-    </section>
+    </Section>
   )
 }
 

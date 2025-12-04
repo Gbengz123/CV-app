@@ -1,14 +1,13 @@
 import { useState } from "react"
+import Section from "./Section"
 
 function Objective({obj}){
   const [objective, setObjective] = useState(obj)
 
   return(
-    <section className="flex flex-col gap-2">
-      <button className="hidden">Add</button>
-      <h1 className="text-xl font-extrabold">OBJECTIVE: </h1>
+    <Section heading={'OBJECTIVE'} hasAdd={false} className={''}>
       <p className="text-sm">{objective}</p>
-    </section>
+    </Section>
   )
 }
 

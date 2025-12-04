@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Section from "./Section"
 
 function Experience(){
   const experience = [
@@ -32,9 +33,7 @@ function Experience(){
   ]
 
   return(
-    <section id="info-section" className="flex flex-col gap-2">
-      <button className="hidden">Add</button>
-      <h1 className="text-xl font-extrabold">WORK EXPERIENCE</h1>
+    <Section heading={'WORK EXPERIENCE'} hasAdd={false} className={''}>
       <div className="grid grid-cols-[repeat(auto-fill,minmax(350px,1fr))] gap-5">
         {experience.map(exp => {
           return(
@@ -49,7 +48,7 @@ function Experience(){
           )
         })}
       </div>
-    </section>
+    </Section>
   )
 }
 
