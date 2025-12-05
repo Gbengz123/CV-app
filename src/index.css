@@ -5,3 +5,20 @@
   src: url("./assets/fonts/Nunito-VariableFont_wght.ttf");
   font-style: normal;
 }
+
+@layer utilities {
+  .dashed-bg {
+    background:
+    /* top */
+    linear-gradient(to right, var(--color-stone-700) 0 30%, transparent 30% 70%, var(--color-stone-700) 70% 100%) top/100% 1px no-repeat,
+  
+    /* bottom */
+    linear-gradient(to right, var(--color-stone-700) 0 30%, transparent 30% 70%, var(--color-stone-700) 70% 100%) bottom/100% 1px no-repeat,
+  
+    /* left */
+    linear-gradient(to bottom, var(--color-stone-700) 0 30%, transparent 30% 70%, var(--color-stone-700) 70% 100%) left/1px 100% no-repeat,
+  
+    /* right */
+    linear-gradient(to bottom, var(--color-stone-700) 0 30%, transparent 30% 70%, var(--color-stone-700) 70% 100%) right/1px 100% no-repeat;
+  }  
+}
