@@ -8,7 +8,7 @@ function Objective(){
 
   return(
     <>
-      <Section heading={'OBJECTIVE'} hasAdd={false} className={''} openModal={() => setOpen(true)}>
+      <Section heading={'OBJECTIVE'} hasAdd={false} className={''} handleEdit={() => setOpen(true)} editState={false}>
         <p className="text-sm">{objective}</p>
       </Section>
       <FormModal open={open} onClose={() => setOpen(false)} displayEdit={() => setObjective(objective)} infoHeading={'OBJECTIVE'}>

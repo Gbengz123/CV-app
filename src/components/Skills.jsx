@@ -26,7 +26,7 @@ function Skills(){
   ]
 
   return(
-    <Section heading={'SKILLS'} hasAdd={true} className={''}>
+    <Section heading={'SKILLS'} hasAdd={true} className={''} editState={false}>
       <div className="flex flex-col gap-2">
         {skills.map(skill => {
           return(

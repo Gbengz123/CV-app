@@ -27,7 +27,8 @@ function Contact(){
         heading={'CONTACT'} 
         hasAdd={false} 
         className={'mt-4'} 
-        openModal={() => setOpen(true)}
+        handleEdit={() => setOpen(true)}
+        editState={false}
       >
         <section className="flex flex-col gap-0.5">
           <Contactinfo Logo={PhoneIcon} info={contactInfo.phone} />
