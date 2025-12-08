@@ -35,7 +35,6 @@ function Education(){
   ])
 
   const currentCourse = coursesStudied.find((course) => course.id === openObj.id)
-  console.log(currentCourse)
 
   function handleCourseNameChange(currentCourseId, e){
     setCoursesStudied(coursesStudied.map((course) => {
