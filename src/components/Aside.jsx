@@ -1,4 +1,4 @@
-import Contact from "./contact"
+import Contact from "./Contact"
 import Education from "./Education"
 import Skills from "./Skills"
 import image from '../assets/img/image.png'
