@@ -79,8 +79,8 @@ function Experience(){
             if (exp.id === 0) return null
             return(
               <section 
-                key={exp.id}
-                className= {editState ? `text-sm flex flex-col gap-1 p-1 relative border border-dashed`: `text-sm flex flex-col gap-1 p-1`}
+              key={exp.id}
+              className= {editState ? `text-sm flex flex-col gap-1 p-1 relative border border-dashed`: `text-sm flex flex-col gap-1 p-1`}
               >
                 {editState && <div className="flex gap-2.5 absolute top-6.5 right-2">
                   <Button onClick={() => setOpen({...openObj, open:true, id:exp.id })}>Edit</Button>
